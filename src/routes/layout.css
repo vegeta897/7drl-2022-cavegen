@@ -1,2 +1,12 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
+
+body {
+	background: #221e3a;
+	color: white;
+}
+
+canvas {
+	image-rendering: pixelated;
+	max-width: 100%;
+}
