@@ -3,7 +3,7 @@ import { Application, Container, Loader } from 'pixi.js'
 import { Viewport } from 'pixi-viewport'
 import { initTextures } from './sprites'
 
-const gameWidth = 1156
+const gameWidth = 720
 const gameHeight = 720
 
 export let PixiApp: Application

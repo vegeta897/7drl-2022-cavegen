@@ -24,7 +24,7 @@ import { incrementLevelGenAttempts, resetLevelGenAttempts, setSeed } from './sto
 const worldRNG = RNG.clone()
 
 const levelSizes = [
-	[64, 40],
+	[40, 40],
 	[50, 50],
 	[60, 60],
 ]
