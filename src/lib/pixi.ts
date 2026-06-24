@@ -18,12 +18,12 @@ export async function initPixi(root: HTMLDivElement) {
 	PIXI.settings.ROUND_PIXELS = true
 	PixiApp = new Application({
 		backgroundColor: 0x221e3a,
-		// width: gameWidth,
-		// height: gameHeight,
+		width: gameWidth,
+		height: gameHeight,
 	})
 	PixiViewport = new Viewport({
-		// screenWidth: gameWidth,
-		// screenHeight: gameHeight,
+		screenWidth: gameWidth,
+		screenHeight: gameHeight,
 		threshold: 3,
 	})
 	PixiViewport.drag({ wheel: false })
