@@ -1,0 +1,1 @@
+import{N as e}from"./CbkBAT3T.js";var t=e({generationAttempts:0,seed:0});function n(){t.generationAttempts++}function r(){t.generationAttempts=0}function i(e){t.seed=e}export{t as i,r as n,i as r,n as t};
