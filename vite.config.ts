@@ -13,6 +13,11 @@ export default defineConfig({
 					filename.split(/[/\\]/).includes('node_modules') ? undefined : true,
 			},
 			adapter: adapter({ strict: false }),
+			paths: {
+				base: process.argv.includes('dev')
+					? ''
+					: (process.env.BASE_PATH as '' | `/${string}` | undefined),
+			},
 		}),
 	],
 	server: { allowedHosts: ['kolvir.local'] },

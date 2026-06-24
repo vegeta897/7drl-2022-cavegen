@@ -18,6 +18,8 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Install and Build 🔧
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           npm install
           npm run build
