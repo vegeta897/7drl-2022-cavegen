@@ -12,7 +12,7 @@ export default defineConfig({
 				runes: ({ filename }) =>
 					filename.split(/[/\\]/).includes('node_modules') ? undefined : true,
 			},
-			adapter: adapter({ strict: false }),
+			adapter: adapter(),
 			paths: {
 				base: process.argv.includes('dev')
 					? ''
